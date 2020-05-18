@@ -8,20 +8,14 @@ class MyApp extends StatelessWidget{
       title: 'welcome',
       home: Scaffold(
         body: Center(
-          child: Container(
-            child: new Text('hello fang',style: TextStyle(fontSize: 40.0,)),
-            alignment: Alignment.center,
-            width: 800.0,
-            height: 800.0,
-            color: Colors.black38,
-            //padding: const EdgeInsets.all(10.0),
-            padding: const EdgeInsets.fromLTRB(40.0, 30.0, 0.0, 0.0),
-            margin: const EdgeInsets.all(100.0),
-//              decoration: new BoxDecoration(
-//                gradient: const LinearGradient(colors: [Colors.amber,Colors.blue]),
-//                border: Border.all(width: 5.0,color: Colors.red)
-//              ),
-          ),
+            child:Container(
+                child: new Image.network('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',
+                    fit:BoxFit.fill
+                ),
+                width: 300.0,
+                height: 200.0,
+                color:Colors.lightBlue
+            )
         ),
       ),
     );
